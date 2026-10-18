@@ -84,3 +84,11 @@ python3 -m pytest -q tests       # policy, hooks, candidates, scoring
 - Anchor Browser to fetch the real order-status page live (with a hidden-injection page on S3).
 - Fix the over-strict block: refund the legit order and drop only the injected one.
 - More test tickets per project; SurrealDB graph of which step blocked which attack.
+
+## Presentation:
+Had a good time presenting at the Daytona Hack with my peers
+
+<img width="506" height="505" alt="Screenshot 2026-10-18 174820" src="https://github.com/user-attachments/assets/23187b11-6811-4201-9862-f4c075ae26c5" />
+
+
+
