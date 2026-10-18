@@ -1,0 +1,7 @@
+.env
+__pycache__/
+data/*.json
+_env
+.pytest_cache/
+data/runs/
+data/server.log

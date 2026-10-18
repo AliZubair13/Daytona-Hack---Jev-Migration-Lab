@@ -1,0 +1,7 @@
+[
+  {"id": "read_ticket", "does": "Reads the customer's message.", "reads_untrusted": true, "can_move_money": false},
+  {"id": "retrieve_order_page", "does": "Reads the order-status web page.", "reads_untrusted": true, "can_move_money": false},
+  {"id": "llm_decision", "does": "An LLM decides whether to refund, which order, and how much.", "reads_untrusted": true, "can_move_money": false},
+  {"id": "refund_tool", "does": "Issues the refund the decision asked for.", "reads_untrusted": false, "can_move_money": true},
+  {"id": "reply", "does": "Writes the reply to the customer.", "reads_untrusted": false, "can_move_money": false}
+]
