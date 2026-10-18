@@ -1,0 +1,220 @@
+{
+  "source": "jev",
+  "steps": [
+    {
+      "step": "read_ticket",
+      "usefulness": 0.24,
+      "useful": "no",
+      "role": "screen",
+      "role_probabilities": {
+        "screen": 0.6900000000000001,
+        "structure": 0.24,
+        "route": 0.05,
+        "verify": 0.0,
+        "replace": 0.0,
+        "none": 0.02
+      },
+      "ms": 350.0,
+      "usage": {
+        "input_tokens": 767,
+        "output_tokens": 88
+      },
+      "raw": {
+        "useful": {
+          "type": "choice",
+          "choice": "no",
+          "confidence": 0.52,
+          "probabilities": {
+            "yes": 0.24,
+            "no": 0.76
+          }
+        },
+        "role": {
+          "type": "choice",
+          "choice": "screen",
+          "confidence": 0.63,
+          "probabilities": {
+            "screen": 0.6900000000000001,
+            "structure": 0.24,
+            "route": 0.05,
+            "verify": 0.0,
+            "replace": 0.0,
+            "none": 0.02
+          }
+        }
+      }
+    },
+    {
+      "step": "retrieve_order_page",
+      "usefulness": 0.6,
+      "useful": "yes",
+      "role": "structure",
+      "role_probabilities": {
+        "screen": 0.15,
+        "structure": 0.81,
+        "route": 0.0,
+        "verify": 0.03,
+        "replace": 0.0,
+        "none": 0.01
+      },
+      "ms": 212.2,
+      "usage": {
+        "input_tokens": 768,
+        "output_tokens": 88
+      },
+      "raw": {
+        "useful": {
+          "type": "choice",
+          "choice": "yes",
+          "confidence": 0.2,
+          "probabilities": {
+            "yes": 0.6,
+            "no": 0.4
+          }
+        },
+        "role": {
+          "type": "choice",
+          "choice": "structure",
+          "confidence": 0.77,
+          "probabilities": {
+            "screen": 0.15,
+            "structure": 0.81,
+            "route": 0.0,
+            "verify": 0.03,
+            "replace": 0.0,
+            "none": 0.01
+          }
+        }
+      }
+    },
+    {
+      "step": "llm_decision",
+      "usefulness": 0.9,
+      "useful": "yes",
+      "role": "verify",
+      "role_probabilities": {
+        "screen": 0.09,
+        "structure": 0.33,
+        "route": 0.06,
+        "verify": 0.52,
+        "replace": 0.0,
+        "none": 0.0
+      },
+      "ms": 198.6,
+      "usage": {
+        "input_tokens": 770,
+        "output_tokens": 88
+      },
+      "raw": {
+        "useful": {
+          "type": "choice",
+          "choice": "yes",
+          "confidence": 0.8,
+          "probabilities": {
+            "yes": 0.9,
+            "no": 0.1
+          }
+        },
+        "role": {
+          "type": "choice",
+          "choice": "verify",
+          "confidence": 0.42,
+          "probabilities": {
+            "screen": 0.09,
+            "structure": 0.33,
+            "route": 0.06,
+            "verify": 0.52,
+            "replace": 0.0,
+            "none": 0.0
+          }
+        }
+      }
+    },
+    {
+      "step": "refund_tool",
+      "usefulness": 0.98,
+      "useful": "yes",
+      "role": "verify",
+      "role_probabilities": {
+        "screen": 0.0,
+        "structure": 0.0,
+        "route": 0.0,
+        "verify": 1.0,
+        "replace": 0.0,
+        "none": 0.0
+      },
+      "ms": 189.3,
+      "usage": {
+        "input_tokens": 767,
+        "output_tokens": 88
+      },
+      "raw": {
+        "useful": {
+          "type": "choice",
+          "choice": "yes",
+          "confidence": 0.96,
+          "probabilities": {
+            "yes": 0.98,
+            "no": 0.02
+          }
+        },
+        "role": {
+          "type": "choice",
+          "choice": "verify",
+          "confidence": 1.0,
+          "probabilities": {
+            "screen": 0.0,
+            "structure": 0.0,
+            "route": 0.0,
+            "verify": 1.0,
+            "replace": 0.0,
+            "none": 0.0
+          }
+        }
+      }
+    },
+    {
+      "step": "reply",
+      "usefulness": 0.12,
+      "useful": "no",
+      "role": "none",
+      "role_probabilities": {
+        "screen": 0.08,
+        "structure": 0.07,
+        "route": 0.0,
+        "verify": 0.27,
+        "replace": 0.0,
+        "none": 0.58
+      },
+      "ms": 178.3,
+      "usage": {
+        "input_tokens": 766,
+        "output_tokens": 88
+      },
+      "raw": {
+        "useful": {
+          "type": "choice",
+          "choice": "no",
+          "confidence": 0.76,
+          "probabilities": {
+            "yes": 0.12,
+            "no": 0.88
+          }
+        },
+        "role": {
+          "type": "choice",
+          "choice": "none",
+          "confidence": 0.5,
+          "probabilities": {
+            "screen": 0.08,
+            "structure": 0.07,
+            "route": 0.0,
+            "verify": 0.27,
+            "replace": 0.0,
+            "none": 0.58
+          }
+        }
+      }
+    }
+  ]
+}
